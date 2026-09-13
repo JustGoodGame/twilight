@@ -2,6 +2,7 @@ pub mod activity_button;
 
 mod activity;
 mod activity_assets;
+mod activity_display_type;
 mod activity_emoji;
 mod activity_flags;
 mod activity_party;
@@ -203,6 +204,9 @@ mod tests {
             state: None,
             timestamps: None,
             url: None,
+            details_url: None,
+            state_url: None,
+            status_display_type: None,
         };
         let value = Presence {
             activities: vec![activity],
