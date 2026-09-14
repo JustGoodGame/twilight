@@ -2,11 +2,11 @@ pub mod activity_button;
 
 mod activity;
 mod activity_assets;
-mod activity_display_type;
 mod activity_emoji;
 mod activity_flags;
 mod activity_party;
 mod activity_secrets;
+mod activity_status_display_type;
 mod activity_timestamps;
 mod activity_type;
 mod client_status;

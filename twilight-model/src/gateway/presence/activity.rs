@@ -2,7 +2,7 @@ use crate::{
     gateway::presence::{
         ActivityAssets, ActivityButton, ActivityEmoji, ActivityFlags, ActivityParty,
         ActivitySecrets, ActivityTimestamps, ActivityType,
-        activity_display_type::ActivityDisplayType,
+        activity_status_display_type::ActivityStatusDisplayType,
     },
     id::{Id, marker::ApplicationMarker},
 };
@@ -47,7 +47,7 @@ pub struct Activity {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub url: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub status_display_type: Option<ActivityDisplayType>,
+    pub status_display_type: Option<ActivityStatusDisplayType>,
 }
 
 #[cfg(test)]
