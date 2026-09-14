@@ -16,9 +16,9 @@ mod status;
 pub use self::{
     activity::Activity, activity_assets::ActivityAssets, activity_button::ActivityButton,
     activity_emoji::ActivityEmoji, activity_flags::ActivityFlags, activity_party::ActivityParty,
-    activity_secrets::ActivitySecrets, activity_timestamps::ActivityTimestamps,
-    activity_type::ActivityType, client_status::ClientStatus, minimal_activity::MinimalActivity,
-    status::Status,
+    activity_secrets::ActivitySecrets, activity_status_display_type::ActivityStatusDisplayType,
+    activity_timestamps::ActivityTimestamps, activity_type::ActivityType,
+    client_status::ClientStatus, minimal_activity::MinimalActivity, status::Status,
 };
 
 use crate::{
